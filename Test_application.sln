@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication2", "WebApplication2\WebApplication2.csproj", "{8C831B88-79F3-4DB4-8353-75F9D7EAB6BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C831B88-79F3-4DB4-8353-75F9D7EAB6BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C831B88-79F3-4DB4-8353-75F9D7EAB6BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C831B88-79F3-4DB4-8353-75F9D7EAB6BE}.Debug|x64.ActiveCfg = Debug|x64
+		{8C831B88-79F3-4DB4-8353-75F9D7EAB6BE}.Debug|x64.Build.0 = Debug|x64
+		{8C831B88-79F3-4DB4-8353-75F9D7EAB6BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C831B88-79F3-4DB4-8353-75F9D7EAB6BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C831B88-79F3-4DB4-8353-75F9D7EAB6BE}.Release|x64.ActiveCfg = Release|x64
+		{8C831B88-79F3-4DB4-8353-75F9D7EAB6BE}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E7C103B-DCED-4B2C-84CD-8012B2178DFC}
+	EndGlobalSection
+EndGlobal

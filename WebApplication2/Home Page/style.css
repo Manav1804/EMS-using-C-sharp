@@ -1,0 +1,250 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace
+}
+
+body {
+   
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgb(0, 0, 0, 0.5)50%), url(bg.jpg);
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    margin-top: auto;
+}
+
+
+.icon {
+    background-color: black;
+    width: 100%;
+    float: left;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 100%;
+    font-size: 30px;
+    font-family: Arial;
+    margin-left: 130px;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+
+.menu {
+    width: 100%;
+    float: left;
+    height: 40px;
+    margin-top: -40px;
+}
+
+ul {
+    height: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    ul li {
+        list-style: none;
+        align-items: center;
+        text-align: end;
+        font-size: 20px;
+        padding-right: 250px;
+    }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+        }
+
+            ul li a:hover {
+                color: #2691d9;
+            }
+
+
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: linear-gradient(to top,rgba(0,0,0,0.8)25%,rgba(0,0,0,0.8)25%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+}
+
+    .center h1 {
+        color:white;
+        text-align: center;
+        padding: 20px 0;
+        
+    }
+
+    .center form {
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.txt_field input {
+    color: white;
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: white;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+    top: -5px;
+    color: #2691d9;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before {
+    width: 100%;
+}
+
+.pass {
+    margin: 15px 0 20px 5px;
+    color: white;
+    cursor: pointer;
+}
+
+    .pass:hover {
+        text-decoration: underline;
+    }
+
+#Button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+    #Button:hover {
+        border-color: #2691d9;
+        transition: .5s;
+    }
+
+.signup_link {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+    .signup_link a {
+        color: #2691d9;
+        text-decoration: none;
+        font-weight:bold;
+    }
+
+        .signup_link a:hover {
+            text-decoration: underline;
+        }
+
+.invalid {
+    color: red;
+    margin: 92px;
+    margin-top: -40px;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+/*<table >
+<tr >
+<td class="auto-style1" > ID</td >
+<td > <asp:TextBox ID="TextBox1" runat="server" Width="100px" > </asp:TextBox > </td >
+
+<td > Name</td >
+<td > <asp:TextBox ID="TextBox2" runat="server" Width="100px" > </asp:TextBox > </td >
+</tr >
+<tr >
+<td class="auto-style1" > DOB</td >
+<td > <asp:TextBox ID="TextBox3" runat="server" type="date" Width="100px" > </asp:TextBox > </td >
+
+<td > Email</td >
+<td > <asp:TextBox ID="TextBox4" runat="server" Width="100px" > </asp:TextBox > </td >
+</tr >
+<tr >
+<td class="auto-style1" > Contact</td >
+<td > <asp:TextBox ID="TextBox5" runat="server" Width="100px" > </asp:TextBox > </td >
+
+<td > Salary</td >
+<td > <asp:TextBox ID="TextBox6" runat="server" Width="100px" > </asp:TextBox > </td >
+</tr >
+<tr >
+<td class="auto-style1" > Gender</td >
+<td >
+<asp:DropDownList ID="DropDown" runat="server" Width="100px" >
+<asp:ListItem > Male</asp:ListItem >
+<asp:ListItem > Female</asp:ListItem >
+<asp:ListItem > Other</asp:ListItem >
+</asp:DropDownList >
+</td >
+
+<td > Passwd</td >
+<td > <asp:TextBox ID="TextBox8" runat="server" Width="100px" > </asp:TextBox > </td >
+
+</tr >
+</table >*/
